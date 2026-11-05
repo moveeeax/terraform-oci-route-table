@@ -8,7 +8,7 @@ target internet, NAT, service, local peering and dynamic routing gateways.
 
 ```hcl
 module "route_table" {
-  source = "github.com/moveeeax/terraform-oci-route-table"
+  source = "github.com/moveeeax/terraform-oci-route-table?ref=v1.0.0"
 
   compartment_id = var.compartment_id
   vcn_id         = var.vcn_id
@@ -57,7 +57,7 @@ data "oci_core_services" "objectstorage" {
 }
 
 module "service_route_table" {
-  source = "github.com/moveeeax/terraform-oci-route-table"
+  source = "github.com/moveeeax/terraform-oci-route-table?ref=v1.0.0"
 
   compartment_id = var.compartment_id
   vcn_id         = var.vcn_id
